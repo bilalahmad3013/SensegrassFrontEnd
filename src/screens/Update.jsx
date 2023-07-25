@@ -15,7 +15,7 @@ export default function Update() {
 
   const data = async () => {
     try {
-      let response = await fetch('http://localhost:8000/findTask', {
+      let response = await fetch('https://sensegrass-back.onrender.com/findTask', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
