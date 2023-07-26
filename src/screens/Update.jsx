@@ -15,7 +15,7 @@ export default function Update() {
 
   const data = async () => {
     try {
-      let response = await fetch('https://sensegrass-back.onrender.com/findTask', {
+      let response = await fetch('http://localhost:8000/findTask', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ export default function Update() {
     const handleSubmit =async (e) => {
       e.preventDefault();
       console.log(formValues)
-      let response=await fetch('https://sensegrass-back.onrender.com/updateTask',{
+      let response=await fetch('http://localhost:8000/updateTask',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -106,7 +106,7 @@ export default function Update() {
     const handleDelete=async ()=>{
       console.log(id);
 
-    let response=await fetch('https://sensegrass-back.onrender.com/deleteTask',{
+    let response=await fetch('http://localhost:8000/deleteTask',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

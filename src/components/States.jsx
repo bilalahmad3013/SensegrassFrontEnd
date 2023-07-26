@@ -16,7 +16,7 @@ export default function States({ children }) {
             description:des,
             dueDate:due
         }
-        let response = await fetch('https://sensegrass-back.onrender.com/addTask', {
+        let response = await fetch('http://localhost:8000/addTask', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ export default function States({ children }) {
     }
 
     const fetchData=async ()=>{
-        let response=await fetch('https://sensegrass-back.onrender.com/getTask',{
+        let response=await fetch('http://localhost:8000/getTask',{
             method:"POST",
             headers:{
                 'Content-Type':'application/json'

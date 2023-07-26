@@ -18,7 +18,7 @@ export default function SignUp() {
         e.preventDefault();
         console.log('Submitted data:', formValues);
         
-        const response=await fetch('https://sensegrass-back.onrender.com/api/createuser', {
+        const response=await fetch('http://localhost:8000/api/createuser', {
             method:"POST",
             headers:{
                 'Content-Type':'application/json'
