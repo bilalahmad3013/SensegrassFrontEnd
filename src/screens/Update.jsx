@@ -1,6 +1,7 @@
 import React, { useEffect, useState,useRef } from 'react'; // Add the missing import for 'useState'
 import { useParams, useNavigate } from 'react-router-dom';
 
+
 export default function Update() {
   const { id } = useParams();
   const isInitialMount = useRef(true);
@@ -15,7 +16,7 @@ export default function Update() {
 
   const data = async () => {
     try {
-      let response = await fetch('http://localhost:8000/findTask', {
+      let response = await fetch('https://sensegrass-back.onrender.com/findTask', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -83,7 +84,7 @@ export default function Update() {
     const handleSubmit =async (e) => {
       e.preventDefault();
       console.log(formValues)
-      let response=await fetch('http://localhost:8000/updateTask',{
+      let response=await fetch('https://sensegrass-back.onrender.com/updateTask',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -106,7 +107,7 @@ export default function Update() {
     const handleDelete=async ()=>{
       console.log(id);
 
-    let response=await fetch('http://localhost:8000/deleteTask',{
+    let response=await fetch('https://sensegrass-back.onrender.com/deleteTask',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
