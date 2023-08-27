@@ -14,7 +14,7 @@ export default function Navbar() {
         <div>
             <nav  className="navbar bg-dark navbar-expand-lg border-bottom border-bottom-dark" data-bs-theme="dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">Sensegrass</Link>
+                    <Link className="navbar-brand" to="/">ALHANSAT-TECHNOLOGIES</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
